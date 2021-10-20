@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+KEY=A4EB4960D8EFB58950ABBAD915664A4BC43AF645
+
+dpkg-scanpackages --multiversion . > Packages
+gzip -k -f Packages
+
+apt-ftparchive release . > Release
+gpg --default-key $KEY -abs -o - Release > Release.gpg
+gpg --default-key $KEY --clearsign -o - Release > InRelease
