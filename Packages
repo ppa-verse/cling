@@ -171,6 +171,31 @@ Description: Language server that provides IDE-like features to editors
  clangd is a language server that implements the Language Server Protocol;
  it can work with many editors through a plugin.
 
+Package: cling
+Version: 0.9.1-1
+Architecture: amd64
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 11371
+Depends: libclang-common-9-dev, libc6 (>= 2.33), libclang-cpp9, libgcc-s1 (>= 3.3.1), libllvm9, libstdc++6 (>= 9)
+Filename: ./cling_0.9.1-1_amd64.deb
+Size: 1344808
+MD5sum: 81201445fa166f0830d631a79009f82d
+SHA1: bed0bbeb59ca0e3ed719b74e5f175633f362f887
+SHA256: 058e74a279aacd0965ddceb09732253ec9ee7f65e4a2c05edadb7bd26f292b3e
+Section: devel
+Priority: optional
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+
 Package: libc++-9-dev
 Source: llvm-toolchain-9
 Version: 1:9.0.1-20+cp
