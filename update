@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-KEY=A4EB4960D8EFB58950ABBAD915664A4BC43AF645
+KEY=80B93EA53DC484D1D86E672B40972A700CD3618F
 
 dpkg-scanpackages --multiversion . > Packages
 gzip -k -f Packages
