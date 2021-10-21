@@ -172,16 +172,16 @@ Description: Language server that provides IDE-like features to editors
  it can work with many editors through a plugin.
 
 Package: cling
-Version: 0.9.1-1
+Version: 0.9.1-2
 Architecture: amd64
 Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Installed-Size: 11371
-Depends: libclang-common-9-dev, libc6 (>= 2.33), libclang-cpp9, libgcc-s1 (>= 3.3.1), libllvm9, libstdc++6 (>= 9)
-Filename: ./cling_0.9.1-1_amd64.deb
-Size: 1344808
-MD5sum: 81201445fa166f0830d631a79009f82d
-SHA1: bed0bbeb59ca0e3ed719b74e5f175633f362f887
-SHA256: 058e74a279aacd0965ddceb09732253ec9ee7f65e4a2c05edadb7bd26f292b3e
+Installed-Size: 1844
+Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
+Filename: ./cling_0.9.1-2_amd64.deb
+Size: 512876
+MD5sum: f0cc889983b93891d16c181b0258573a
+SHA1: b8a07ff71cfe580a7dbe6cb14a4b36522f6e6c4b
+SHA256: 70d3d67a8c7137cecabad7523e16e6c2945bf5a030144babb3b33eafc9655f40
 Section: devel
 Priority: optional
 Homepage: https://root.cern/cling/
@@ -195,6 +195,36 @@ Description: Interactive C++ interpreter
  One of Cling’s main goals was to provide contemporary, high-performance
  alternative of the first C++ interpreter in the ROOT project - CINT. The
  backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains the interpreter itself.
+
+Package: cling-common
+Source: cling
+Version: 0.9.1-2
+Architecture: amd64
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 306
+Depends: libclang-common-9-dev (>> 2:9~)
+Filename: ./cling-common_0.9.1-2_amd64.deb
+Size: 55508
+MD5sum: 3c67b46b04b9439216c55029e71f5435
+SHA1: 83c3db8fbba90e9142c684721aaa828be5d96c8d
+SHA256: 7bf555810034df2649f9b1d99ec622b61caa9f837c7987843d3a58f111780682
+Section: devel
+Priority: optional
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains common files.
 
 Package: libc++-9-dev
 Source: llvm-toolchain-9
@@ -454,6 +484,62 @@ Description: C interface to the Clang library
  loading already-parsed ASTs, traversing the AST, associating physical source
  locations with elements within the AST, and other facilities that support
  Clang-based development tools.
+
+Package: libcling
+Source: cling
+Version: 0.9.1-2
+Architecture: amd64
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 1766
+Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
+Filename: ./libcling_0.9.1-2_amd64.deb
+Size: 484348
+MD5sum: 08ba74d0f230eee711fdb98c5d36f665
+SHA1: 291aa68305c64e6774e322a57bd2d95d22315410
+SHA256: 9c04b588cb18b84b456afd555b3e933e4044861cb88d54bc0a843a2bf1a99a7a
+Section: devel
+Priority: optional
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains the shared library.
+
+Package: libcling-dev
+Source: cling
+Version: 0.9.1-2
+Architecture: amd64
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 7480
+Depends: libcling (= 0.9.1-2)
+Filename: ./libcling-dev_0.9.1-2_amd64.deb
+Size: 729152
+MD5sum: dfca8390adce384b369e6f6ed1743c60
+SHA1: cf687135136dbc77031f5c07ef756407760a59eb
+SHA256: 07ed8f5468b930399b830876a6ce6962d4761e8f54ea021d7e58954dc55ccc75
+Section: devel
+Priority: optional
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains development files.
 
 Package: libfuzzer-9-dev
 Source: llvm-toolchain-9
