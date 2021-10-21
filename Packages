@@ -793,6 +793,28 @@ Description: LLVM OpenMP runtime
  linked against, and that manages the multiple threads in an OpenMP program
  while it is executing.
 
+Package: libxeus1
+Source: xeus
+Version: 1.0.4-1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 1017
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 6), libuuid1 (>= 2.16), libzmq5 (>= 3.2.3+dfsg)
+Filename: ./libxeus1_1.0.4-1_amd64.deb
+Size: 276180
+MD5sum: 1efc9c4d2228d574a84261fb86aa94bf
+SHA1: f3178152a33125d9a7f9a00492a10a0f67e6efff
+SHA256: 466e3e24fba8d5dbcad15702799fdcef0ae0bef1aee923d1da04ff43d3ca7848
+Section: libs
+Priority: optional
+Homepage: https://github.com/jupyter-xeus/xeus
+Description: C++ Implementation of the Jupyter Kernel protocol (library)
+ xeus enables custom kernel authors to implement Jupyter kernels more
+ easily. It takes the burden of implementing the Jupyter Kernel protocol
+ so developers can focus on implementing the interpreter part of the Kernel.
+ .
+ This package contains the shared library.
+
 Package: lld-9
 Source: llvm-toolchain-9
 Version: 2:9.0.1-1
@@ -1097,4 +1119,44 @@ Description: Next generation, high-performance debugger, python3 lib
  Project, such as the Clang expression parser and LLVM disassembler.
  .
  This binding package provides access to lldb.
+
+Package: xeus-dev
+Source: xeus
+Version: 1.0.4-1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 3642
+Depends: libxeus1 (= 1.0.4-1), xtl-dev, libzmq3-dev, nlohmann-json3-dev, uuid-dev, libssl-dev
+Filename: ./xeus-dev_1.0.4-1_amd64.deb
+Size: 403716
+MD5sum: a84a7218d25f85add7e8b794aea97d23
+SHA1: 29dc6f383c097461d7cb56cf64fe2af015df1b4d
+SHA256: 491f14917c6b578c57fb1f5174a72d6f3c69d8542b37cd01780b2353c6374758
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/jupyter-xeus/xeus
+Description: C++ Implementation of the Jupyter Kernel protocol (headers)
+ xeus enables custom kernel authors to implement Jupyter kernels more
+ easily. It takes the burden of implementing the Jupyter Kernel protocol
+ so developers can focus on implementing the interpreter part of the Kernel.
+ .
+ This package contains the headers and cmake config.
+
+Package: xtl-dev
+Source: xtl
+Version: 0.7.2-2
+Architecture: all
+Maintainer: Debian QuantStack Team <team+debian-quantstack-team@tracker.debian.org>
+Installed-Size: 799
+Filename: ./xtl-dev_0.7.2-2_all.deb
+Size: 89348
+MD5sum: 4d2f190e7a19687912dde7ce4614f817
+SHA1: 902339984c12f021a8ea5a8b79610d7bd3577ec1
+SHA256: 50a60e09974e6874fffde02a8d8836de421443bdbd16369741207b9c8d34edda
+Section: libdevel
+Priority: optional
+Homepage: https://github.com/xtensor-stack/xtl
+Description: basic tools (containers, algorithms) used for xtensor and xeus
+ This package contains additional containers and tools missing from
+ STL C++14. This library is header-only.
 
