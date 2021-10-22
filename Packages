@@ -1,217 +1,18 @@
-Package: clang-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 314
-Depends: libc6 (>= 2.14), libclang-cpp9 (= 2:9.0.1-1), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 5.2), libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang-common-9-dev (= 2:9.0.1-1), libc6-dev, binutils
-Recommends: llvm-9-dev, python3
-Suggests: clang-9-doc
-Provides: c++-compiler, c-compiler, objc-compiler
-Filename: ./clang-9_9.0.1-1_amd64.deb
-Size: 101700
-MD5sum: 5eb6c03b6694d1e6d3d01d5ee5827d8b
-SHA1: 2ea43f49efd61787ff2ea919e2d110dd0aba2dd0
-SHA256: 1c7376024835b6eee2f8a3f4860b70ce7904847bd6dd45df1a7b215d69072048
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: C, C++ and Objective-C compiler
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
- .
- Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
- provides most of the support of C++17.
-
-Package: clang-9-doc
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: all
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 9279
-Depends: libjs-mathjax
-Filename: ./clang-9-doc_9.0.1-1_all.deb
-Size: 1094568
-MD5sum: 1c9ef5282541c7900e2644a5fcaf1cd3
-SHA1: 8c081bc7631b65976c3ea3954c24d39fc8cb9a6e
-SHA256: 012749e63f86048f0a6b3894184af80040b037746e03f7db4c4e9e5b02b8cf67
-Section: doc
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: C, C++ and Objective-C compiler - Documentation
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
- .
- Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
- provides most of the support of C++17.
- .
- This package contains the documentation.
-
-Package: clang-9-examples
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 69
-Filename: ./clang-9-examples_9.0.1-1_amd64.deb
-Size: 47252
-MD5sum: a3855c1901b83cb9fb5b50c6e2c1c4f3
-SHA1: f87839e17c351febcf242f811f158b982387b7bb
-SHA256: f42ac034548a8024506cae78bb52a02e370ad30ec737890fe103b001650b7e76
-Section: doc
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Clang examples
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
- .
- Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
- provides most of the support of C++17.
- .
- This package contains the Clang examples.
-
-Package: clang-format-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 179
-Depends: libc6 (>= 2.14), libclang-cpp9, libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 5.2), python3
-Filename: ./clang-format-9_9.0.1-1_amd64.deb
-Size: 73716
-MD5sum: da6d62bd6c59036acd4eb3e8b215f8fd
-SHA1: fec339802c443b96e86156400c14c6979efd3108
-SHA256: e3d1005fcadca4546e12288559b497ae401fad54553050c3d997a7900b4ca06c
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Tool to format C/C++/Obj-C code
- Clang-format is both a library and a stand-alone tool with the goal of
- automatically reformatting C++ sources files according to configurable
- style guides. To do so, clang-format uses Clang's Lexer to transform an
- input file into a token stream and then changes all the whitespace around
- those tokens. The goal is for clang-format to both serve both as a user
- tool (ideally with powerful IDE integrations) and part of other
- refactoring tools, e.g. to do a reformatting of all the lines changed
- during a renaming.
- .
- This package also provides vim and emacs plugins.
-
-Package: clang-tidy-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 25922
-Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 9), python3, libclang-common-9-dev, clang-tools-9, python3-yaml
-Filename: ./clang-tidy-9_9.0.1-1_amd64.deb
-Size: 6293700
-MD5sum: 8e1f906f17235f4c2812b42a6d8d8ead
-SHA1: ad66bbd82f6fa497c7dccbc26ec1d1910c1f39a3
-SHA256: 29d88136865d0398bc1aee5d2102ffc001206c5be619d7af3e86fc91b5feb1fb
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: clang-based C++ linter tool
- Provide an extensible framework for diagnosing and fixing typical programming
- errors, like style violations, interface misuse, or bugs that can be deduced
- via static analysis. clang-tidy is modular and provides a convenient interface
- for writing new checks.
-
-Package: clang-tools-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 143430
-Depends: libc6 (>= 2.33), libclang-cpp9, libclang1-9 (>= 1:9~svn360566-1~), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 9), clang-9 (= 2:9.0.1-1), python3
-Filename: ./clang-tools-9_9.0.1-1_amd64.deb
-Size: 35989216
-MD5sum: 56152a98ec746b6718fc6cc1f8d8c89e
-SHA1: d47c294ccbdbea050cbc5828ca19633efd92a03b
-SHA256: 7a89ac11a8e86c25493c87fb28ad714fd98e1c75022ce53a2098a2d7b03ef77a
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: clang-based tools for C/C++ developments
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
- .
- Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
- provides most of the support of C++17.
- .
- This package contains some clang-based tools like scan-build, clang-cl, etc.
-
-Package: clangd-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 24253
-Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 9), libclang-common-9-dev (= 2:9.0.1-1)
-Filename: ./clangd-9_9.0.1-1_amd64.deb
-Size: 5911452
-MD5sum: 9b492fb0a28ee8486db90567c98fbdf1
-SHA1: e71e3cce59569e8739336202a1cc7d3902bf2c4a
-SHA256: 3677a275623b6419a52caaa5ac32caaea317a9ac2933191c6f7ec3a28f92e13e
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Language server that provides IDE-like features to editors
- clangd understands your C++ code and adds smart features to your editor:
-  - code completion
-  - compile errors
-  - go-to-definition
-  - and more.
- .
- clangd is a language server that implements the Language Server Protocol;
- it can work with many editors through a plugin.
-
-Package: cling
-Version: 0.9.1-2
-Architecture: amd64
-Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Installed-Size: 1844
-Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
-Filename: ./cling_0.9.1-2_amd64.deb
-Size: 512876
-MD5sum: f0cc889983b93891d16c181b0258573a
-SHA1: b8a07ff71cfe580a7dbe6cb14a4b36522f6e6c4b
-SHA256: 70d3d67a8c7137cecabad7523e16e6c2945bf5a030144babb3b33eafc9655f40
-Section: devel
-Priority: optional
-Homepage: https://root.cern/cling/
-Description: Interactive C++ interpreter
- Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
- libraries. Its advantages over the standard interpreters are that it has
- command line prompt and uses just-in-time (JIT) compiler for compilation. Many
- of the developers of such kind of software applications name them interactive
- compilers.
- .
- One of Cling’s main goals was to provide contemporary, high-performance
- alternative of the first C++ interpreter in the ROOT project - CINT. The
- backward-compatibility with CINT was major priority during the development.
- .
- This package contains the interpreter itself.
-
 Package: cling-common
-Source: cling
-Version: 0.9.1-2
 Architecture: amd64
+Version: 0.9.1-2
+Priority: optional
+Section: devel
+Source: cling
 Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
 Installed-Size: 306
 Depends: libclang-common-9-dev (>> 2:9~)
-Filename: ./cling-common_0.9.1-2_amd64.deb
+Filename: ./cling/cling-common_0.9.1-2_amd64.deb
 Size: 55508
 MD5sum: 3c67b46b04b9439216c55029e71f5435
 SHA1: 83c3db8fbba90e9142c684721aaa828be5d96c8d
 SHA256: 7bf555810034df2649f9b1d99ec622b61caa9f837c7987843d3a58f111780682
-Section: devel
-Priority: optional
+SHA512: 71a145c13e516aed573d4c3e6856b6094969fc778f31a6a83975b49ff9a0e0a4ce2dacd727628eadfa4b7b7d53979a14d0bd9a312ee5fd45c9fcfe1502e3874c
 Homepage: https://root.cern/cling/
 Description: Interactive C++ interpreter
  Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
@@ -226,25 +27,292 @@ Description: Interactive C++ interpreter
  .
  This package contains common files.
 
-Package: libc++-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
+Package: cling
 Architecture: amd64
+Version: 0.9.1-2
+Priority: optional
+Section: devel
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 1844
+Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
+Filename: ./cling/cling_0.9.1-2_amd64.deb
+Size: 512876
+MD5sum: f0cc889983b93891d16c181b0258573a
+SHA1: b8a07ff71cfe580a7dbe6cb14a4b36522f6e6c4b
+SHA256: 70d3d67a8c7137cecabad7523e16e6c2945bf5a030144babb3b33eafc9655f40
+SHA512: 642a76911a6d239017c527f2044c0ca128990d79c0696fe3d73524c90f82e675d2a021727da6aa9b5e0b1467ef9dc31fa74dfd716528db322ca412b414a5c40d
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains the interpreter itself.
+
+Package: libcling-dev
+Architecture: amd64
+Version: 0.9.1-2
+Priority: optional
+Section: devel
+Source: cling
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 7480
+Depends: libcling (= 0.9.1-2)
+Filename: ./cling/libcling-dev_0.9.1-2_amd64.deb
+Size: 729152
+MD5sum: dfca8390adce384b369e6f6ed1743c60
+SHA1: cf687135136dbc77031f5c07ef756407760a59eb
+SHA256: 07ed8f5468b930399b830876a6ce6962d4761e8f54ea021d7e58954dc55ccc75
+SHA512: b15919118d223fa752f4d717d7e61016d87fe2357536da17b7ca2217322ea842d2e808663a86e3d270b163408023f36f0848862decb3c6d17d1c00847e769c9b
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains development files.
+
+Package: libcling
+Architecture: amd64
+Version: 0.9.1-2
+Priority: optional
+Section: devel
+Source: cling
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 1766
+Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
+Filename: ./cling/libcling_0.9.1-2_amd64.deb
+Size: 484348
+MD5sum: 08ba74d0f230eee711fdb98c5d36f665
+SHA1: 291aa68305c64e6774e322a57bd2d95d22315410
+SHA256: 9c04b588cb18b84b456afd555b3e933e4044861cb88d54bc0a843a2bf1a99a7a
+SHA512: db320c1ae07f817c031dfe8f2f0f84c45d40405cb3618dcb35532bd16d518024df2ad1283e6e02ed2c8c9ee6253162d6c05a06022ed101402d19ba1758803e6d
+Homepage: https://root.cern/cling/
+Description: Interactive C++ interpreter
+ Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
+ libraries. Its advantages over the standard interpreters are that it has
+ command line prompt and uses just-in-time (JIT) compiler for compilation. Many
+ of the developers of such kind of software applications name them interactive
+ compilers.
+ .
+ One of Cling’s main goals was to provide contemporary, high-performance
+ alternative of the first C++ interpreter in the ROOT project - CINT. The
+ backward-compatibility with CINT was major priority during the development.
+ .
+ This package contains the shared library.
+
+Package: clang-9-doc
+Architecture: all
+Version: 2:9.0.1-1
+Priority: optional
+Section: doc
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 9279
+Depends: libjs-mathjax
+Filename: ./llvm-toolchain/clang-9-doc_9.0.1-1_all.deb
+Size: 1094568
+MD5sum: 1c9ef5282541c7900e2644a5fcaf1cd3
+SHA1: 8c081bc7631b65976c3ea3954c24d39fc8cb9a6e
+SHA256: 012749e63f86048f0a6b3894184af80040b037746e03f7db4c4e9e5b02b8cf67
+SHA512: cd0f7af341ffbfc826140fc424af4440f30ee3a6bb56411184683729b6788fe853fe356767e1eecc5aaa2f382e57f64b687ea4c7c9c0fe0a6216b31984f5e958
+Homepage: https://www.llvm.org/
+Description: C, C++ and Objective-C compiler - Documentation
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
+ provides most of the support of C++17.
+ .
+ This package contains the documentation.
+
+Package: clang-9-examples
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: doc
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 69
+Filename: ./llvm-toolchain/clang-9-examples_9.0.1-1_amd64.deb
+Size: 47252
+MD5sum: a3855c1901b83cb9fb5b50c6e2c1c4f3
+SHA1: f87839e17c351febcf242f811f158b982387b7bb
+SHA256: f42ac034548a8024506cae78bb52a02e370ad30ec737890fe103b001650b7e76
+SHA512: 2f2dacd1f8f42fa6a26815b113a71559d7b83b1421e087057c1fc4df57840bc00f9c0da7080e883a596fea6f0374f3a713028ed1c7cd7009cf671f8e192822a0
+Homepage: https://www.llvm.org/
+Description: Clang examples
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
+ provides most of the support of C++17.
+ .
+ This package contains the Clang examples.
+
+Package: clang-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 314
+Provides: c++-compiler, c-compiler, objc-compiler
+Depends: libc6 (>= 2.14), libclang-cpp9 (= 2:9.0.1-1), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 5.2), libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang-common-9-dev (= 2:9.0.1-1), libc6-dev, binutils
+Recommends: llvm-9-dev, python3
+Suggests: clang-9-doc
+Filename: ./llvm-toolchain/clang-9_9.0.1-1_amd64.deb
+Size: 101700
+MD5sum: 5eb6c03b6694d1e6d3d01d5ee5827d8b
+SHA1: 2ea43f49efd61787ff2ea919e2d110dd0aba2dd0
+SHA256: 1c7376024835b6eee2f8a3f4860b70ce7904847bd6dd45df1a7b215d69072048
+SHA512: 3d3c965bc3b0733ed7055a77b6fd692a4bcf9cba98bf5aaa9a4949a27eb02e252ae061272140e3bfdc11341430b444f966a3bbe96cf84edba1cca6baa5e41c54
+Homepage: https://www.llvm.org/
+Description: C, C++ and Objective-C compiler
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
+ provides most of the support of C++17.
+
+Package: clang-format-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 179
+Depends: libc6 (>= 2.14), libclang-cpp9, libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 5.2), python3
+Filename: ./llvm-toolchain/clang-format-9_9.0.1-1_amd64.deb
+Size: 73716
+MD5sum: da6d62bd6c59036acd4eb3e8b215f8fd
+SHA1: fec339802c443b96e86156400c14c6979efd3108
+SHA256: e3d1005fcadca4546e12288559b497ae401fad54553050c3d997a7900b4ca06c
+SHA512: b869aa2d3a2d798e152c69c4dfa3e6e688480bcb50c0b96c15f0449941e119d0427208bcb503ae9cce5463dc7145e95cbcbb8f7aec6c3db51339d403aa4b5878
+Homepage: https://www.llvm.org/
+Description: Tool to format C/C++/Obj-C code
+ Clang-format is both a library and a stand-alone tool with the goal of
+ automatically reformatting C++ sources files according to configurable
+ style guides. To do so, clang-format uses Clang's Lexer to transform an
+ input file into a token stream and then changes all the whitespace around
+ those tokens. The goal is for clang-format to both serve both as a user
+ tool (ideally with powerful IDE integrations) and part of other
+ refactoring tools, e.g. to do a reformatting of all the lines changed
+ during a renaming.
+ .
+ This package also provides vim and emacs plugins.
+
+Package: clang-tidy-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 25922
+Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 9), python3, libclang-common-9-dev, clang-tools-9, python3-yaml
+Filename: ./llvm-toolchain/clang-tidy-9_9.0.1-1_amd64.deb
+Size: 6293700
+MD5sum: 8e1f906f17235f4c2812b42a6d8d8ead
+SHA1: ad66bbd82f6fa497c7dccbc26ec1d1910c1f39a3
+SHA256: 29d88136865d0398bc1aee5d2102ffc001206c5be619d7af3e86fc91b5feb1fb
+SHA512: dbf73eb06fa37e7a02ea5669edaa62563310abdd4fbd91f0182f139ffb792ee2b39880aa81238491964108e3d042539951dd4856d84895c31f1bcdfb8697f26a
+Homepage: https://www.llvm.org/
+Description: clang-based C++ linter tool
+ Provide an extensible framework for diagnosing and fixing typical programming
+ errors, like style violations, interface misuse, or bugs that can be deduced
+ via static analysis. clang-tidy is modular and provides a convenient interface
+ for writing new checks.
+
+Package: clang-tools-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 143430
+Depends: libc6 (>= 2.33), libclang-cpp9, libclang1-9 (>= 1:9~svn360566-1~), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 9), clang-9 (= 2:9.0.1-1), python3
+Filename: ./llvm-toolchain/clang-tools-9_9.0.1-1_amd64.deb
+Size: 35989216
+MD5sum: 56152a98ec746b6718fc6cc1f8d8c89e
+SHA1: d47c294ccbdbea050cbc5828ca19633efd92a03b
+SHA256: 7a89ac11a8e86c25493c87fb28ad714fd98e1c75022ce53a2098a2d7b03ef77a
+SHA512: ad1bdc1361f9aee8c9b413d0f510e7ee8cd350a6e29828d18342de9824fde3f6f86b7bde7ee88d0d7a97b4a90852240034fbcc11b1fbf430b6ecf941fa8a38ff
+Homepage: https://www.llvm.org/
+Description: clang-based tools for C/C++ developments
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11 and 14 standards and also
+ provides most of the support of C++17.
+ .
+ This package contains some clang-based tools like scan-build, clang-cl, etc.
+
+Package: clangd-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 24253
+Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 9), libclang-common-9-dev (= 2:9.0.1-1)
+Filename: ./llvm-toolchain/clangd-9_9.0.1-1_amd64.deb
+Size: 5911452
+MD5sum: 9b492fb0a28ee8486db90567c98fbdf1
+SHA1: e71e3cce59569e8739336202a1cc7d3902bf2c4a
+SHA256: 3677a275623b6419a52caaa5ac32caaea317a9ac2933191c6f7ec3a28f92e13e
+SHA512: 00ba93fa054c47480800a531fbb2eb610cc9bcaf4ad35dd5ca580c004ee0cd2739e19da3dc996d6bc075080034f4e309ea2faee1bfe7146a8b322330725abcd2
+Homepage: https://www.llvm.org/
+Description: Language server that provides IDE-like features to editors
+ clangd understands your C++ code and adds smart features to your editor:
+  - code completion
+  - compile errors
+  - go-to-definition
+  - and more.
+ .
+ clangd is a language server that implements the Language Server Protocol;
+ it can work with many editors through a plugin.
+
+Package: libc++-9-dev
+Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 6280
+Provides: libc++-x.y-dev
 Depends: libc++1-9 (= 2:9.0.1-1)
 Conflicts: libc++-x.y-dev
 Breaks: libc++-dev (<< 44)
 Replaces: libc++-x.y-dev
-Provides: libc++-x.y-dev
-Filename: ./libc++-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libc++-9-dev_9.0.1-1_amd64.deb
 Size: 652172
 MD5sum: c4f83ccf12747939b956a4738bf54a6c
 SHA1: 0c3e9e127f96fc67ccc257bfe14f26afdd7cc3c5
 SHA256: 941060fe7d2b220786cbc3ac2bae41c43bfec16f0a473da5beed9565c666fa8c
-Section: libdevel
-Priority: optional
-Multi-Arch: same
+SHA512: 96f52d4435655777ce814cbff2f33fc45b109dbaf1db4cf95b69acd8b4d605d952228bf614d99eed44f2d563e865c88f2244142494800d1384c02467821b5112
 Homepage: https://www.llvm.org/
 Description: LLVM C++ Standard library (development files)
  libc++ is another implementation of the C++ standard library
@@ -260,25 +328,26 @@ Description: LLVM C++ Standard library (development files)
    * Extensive unit tests.
 
 Package: libc++1-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 842
+Provides: libc++-x.y
 Depends: libc++abi1-9, libc6 (>= 2.33), libgcc-s1 (>= 3.0)
 Suggests: clang
 Conflicts: libc++-x.y
 Breaks: libc++1 (<< 44)
 Replaces: libc++-x.y
-Provides: libc++-x.y
-Filename: ./libc++1-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libc++1-9_9.0.1-1_amd64.deb
 Size: 237140
 MD5sum: efb7aca2e3202efbb2ec187bf3b10b69
 SHA1: f8b0373bc97663edb122490dcea24d9fa1a195e4
 SHA256: 31056b35ee1c1b5fa02a14e2bbbd2540d8e4e406f7bf7e787c2ac7166863ea7a
-Section: libs
-Priority: optional
-Multi-Arch: same
+SHA512: 3767a36bcccccd4ff1524291d110b5ccce32120805f1c86ead5d0ffcf07febcb424611ad16dfcff6c25eda6e7d708cb72001ae1408e0eeabc66b1bdd3245d90f
 Homepage: https://www.llvm.org/
 Description: LLVM C++ Standard library
  libc++ is another implementation of the C++ standard library.
@@ -294,24 +363,25 @@ Description: LLVM C++ Standard library
    * Extensive unit tests.
 
 Package: libc++abi-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 432
+Provides: libc++abi-x.y-dev
 Depends: libc++abi1-9 (= 2:9.0.1-1)
 Conflicts: libc++abi-x.y-dev
 Breaks: libc++abi-dev (<= 44)
 Replaces: libc++abi-x.y-dev
-Provides: libc++abi-x.y-dev
-Filename: ./libc++abi-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libc++abi-9-dev_9.0.1-1_amd64.deb
 Size: 100076
 MD5sum: 15ffb4ad7d58efa78e1952465474b6fc
 SHA1: e0147df40003a82ed64cc7fe1453575dae3c6d08
 SHA256: 40ab9ab9cea4bdfd165e4998b7e6099da341568d099c721e9b67a36774982ab7
-Section: libdevel
-Priority: optional
-Multi-Arch: same
+SHA512: 7ebc4485337c9e65459af4c39e52ec96d9a51a1b91b8d36f2ee73f0d16b8e5707e9cb97aec1866780954858b902692eafd3cc3657630c094e3a5bd8e5738307e
 Homepage: https://www.llvm.org/
 Description: LLVM low level support for a standard C++ library (development files)
  libc++abi is another implementation of low level support for a standard C++
@@ -323,24 +393,25 @@ Description: LLVM low level support for a standard C++ library (development file
    * Provide a portable sublayer to ease the porting of libc++
 
 Package: libc++abi1-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 271
+Provides: libc++abi-x.y
 Depends: libc6 (>= 2.18), libgcc-s1 (>= 3.0)
 Conflicts: libc++abi-x.y
 Breaks: libc++abi1 (<< 44)
 Replaces: libc++abi-x.y
-Provides: libc++abi-x.y
-Filename: ./libc++abi1-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libc++abi1-9_9.0.1-1_amd64.deb
 Size: 92324
 MD5sum: db5f9a6877f11322eecd6201eec40a2f
 SHA1: bf9a421570d03094f3f80a2f280ed5de1ab2f9c2
 SHA256: 4457c6f2353f2a383f5e0e6c27128755b3a10b648796a35450cbaf1e9d7285d9
-Section: libs
-Priority: optional
-Multi-Arch: same
+SHA512: 6b2c2f1f8b0fab65e432dfffa90ad75c6cc0d9b993bed8b6dd30aa3b60b0682ebdeb5e84eccd549808d78202403f71d665338c9f13bc200cb6c4b198e8a08a27
 Homepage: https://www.llvm.org/
 Description: LLVM low level support for a standard C++ library
  libc++abi is another implementation of low level support for a standard C++
@@ -352,19 +423,20 @@ Description: LLVM low level support for a standard C++ library
    * Provide a portable sublayer to ease the porting of libc++
 
 Package: libclang-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 154167
 Depends: libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang1-9 (= 2:9.0.1-1), libclang-common-9-dev (= 2:9.0.1-1)
-Filename: ./libclang-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libclang-9-dev_9.0.1-1_amd64.deb
 Size: 16744916
 MD5sum: 9f4a333a052bec1a175c53d714b3e480
 SHA1: 1d9e97756ba2390d057003eb1dc6c0e26916802e
 SHA256: f79ae2f428e85fafbee2dfff2b28c3179f3a5b8097770dffd49191a005b56483
-Section: libdevel
-Priority: optional
+SHA512: 92bbbc18404c5dd63f192694caa4dce47b839330b826fd70f931b07c1c66e6056a22b343490c241426c1a3fd3ff7357a4290626938dd6f6f4404c4f93c05040f
 Homepage: https://www.llvm.org/
 Description: Clang library - Development package
  Clang project is a C, C++, Objective C and Objective C++ front-end
@@ -378,19 +450,20 @@ Description: Clang library - Development package
  libclang1-9.
 
 Package: libclang-common-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 44919
 Depends: lib32gcc-s1 (>= 4.2), lib32stdc++6 (>= 4.1.1), libc6 (>= 2.32), libc6-i386 (>= 2.32), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1), libllvm9 (= 2:9.0.1-1)
-Filename: ./libclang-common-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libclang-common-9-dev_9.0.1-1_amd64.deb
 Size: 3614152
 MD5sum: 4faa68b76d98999743f6424f14517b47
 SHA1: 9e698a39c72a31929dfe0169d4db54f5a30fecad
 SHA256: 9b1ba433002634598f9fe8bce268b307de66b507b86b31e98e526fb87a7d45b3
-Section: libdevel
-Priority: optional
+SHA512: e300b7782311bc29880e547bbee36df5ec366f73d122da7dcf026ee02591043fcce2e88cf2753c451380d24161444a978880ffcebef7996e2c7bd5cc7e71c520
 Homepage: https://www.llvm.org/
 Description: Clang library - Common development package
  Clang project is a C, C++, Objective C and Objective C++ front-end
@@ -404,39 +477,41 @@ Description: Clang library - Common development package
  (profiling, etc).
 
 Package: libclang-cpp1-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: all
+Version: 2:9.0.1-1
+Priority: optional
+Section: oldlibs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 48
 Depends: libclang-cpp9
-Filename: ./libclang-cpp1-9_9.0.1-1_all.deb
+Filename: ./llvm-toolchain/libclang-cpp1-9_9.0.1-1_all.deb
 Size: 38908
 MD5sum: c32f784ba938bc623b6947366e8ece65
 SHA1: bbc590f7206b9858f2fa6ab7e4eb71dfeaf4e34d
 SHA256: 72da64faa643a4a6321b67d4d068c815d7d0df96d314f27bec303593a8aa15e3
-Section: oldlibs
-Priority: optional
+SHA512: ece09dea753d02f36ed19af7f108ed81dc0fd7a1e3bba723c9cfc2f4cf595db9fadb2b4032cfc98bfd01f70e87d38088216c6068729048c0f40804709c485ab9
 Homepage: https://www.llvm.org/
 Description: transitional package
  This is a transitional package. It can safely be removed.
 
 Package: libclang-cpp9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 37045
 Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 9)
 Breaks: libclang-cpp1-9 (<< 2:9~+rc3-1~exp1)
 Replaces: libclang-cpp1-9 (<< 2:9~+rc3-1~exp1)
-Filename: ./libclang-cpp9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libclang-cpp9_9.0.1-1_amd64.deb
 Size: 8390204
 MD5sum: 13a52ee12871fcfcced09948bbcaff1f
 SHA1: a0f4bd5339d1aea10d6b413890947a14bea31ff2
 SHA256: bd5bc2f2be180e35c8785fdbe0a19e8c549f0057fe5ac4f3d8f62548a741541d
-Section: libs
-Priority: optional
+SHA512: 2a9817dbaf30e04fd5bf38cc44c48ceacc0ff2475afe13beba10f3d04247c8f58af5b01220e05c95bf9eb3f941463cfd5e93c7424ffddde4de236ce3cf40aa77
 Homepage: https://www.llvm.org/
 Description: C++ interface to the Clang library
  Clang project is a C, C++, Objective C and Objective C++ front-end
@@ -455,19 +530,20 @@ Description: C++ interface to the Clang library
  Clang-based development tools.
 
 Package: libclang1-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 29887
 Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 9)
-Filename: ./libclang1-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libclang1-9_9.0.1-1_amd64.deb
 Size: 6720400
 MD5sum: eef3fbb3af34c0b3130938e9c5c3983c
 SHA1: 7b565cc76b64a92e7b9d2999b73a55e3782ae7ba
 SHA256: 5f1a4f1701098b56e1f0be124c905b9aad6e9322730e564adc1c6242c2c6af89
-Section: libs
-Priority: optional
+SHA512: ea6e78f4f0508beafa994ea88de000f8ddd98bf7624657613eba85a27e2883207a6340d723ee0ac6e99613dfcf479054b06ab58cd57770e6805b3e716ad96a31
 Homepage: https://www.llvm.org/
 Description: C interface to the Clang library
  Clang project is a C, C++, Objective C and Objective C++ front-end
@@ -485,76 +561,21 @@ Description: C interface to the Clang library
  locations with elements within the AST, and other facilities that support
  Clang-based development tools.
 
-Package: libcling
-Source: cling
-Version: 0.9.1-2
-Architecture: amd64
-Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Installed-Size: 1766
-Depends: cling-common (= 0.9.1-2), libclang-cpp9 (>> 2:9~), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libllvm9 (>> 2:9~), libstdc++6 (>= 9)
-Filename: ./libcling_0.9.1-2_amd64.deb
-Size: 484348
-MD5sum: 08ba74d0f230eee711fdb98c5d36f665
-SHA1: 291aa68305c64e6774e322a57bd2d95d22315410
-SHA256: 9c04b588cb18b84b456afd555b3e933e4044861cb88d54bc0a843a2bf1a99a7a
-Section: devel
-Priority: optional
-Homepage: https://root.cern/cling/
-Description: Interactive C++ interpreter
- Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
- libraries. Its advantages over the standard interpreters are that it has
- command line prompt and uses just-in-time (JIT) compiler for compilation. Many
- of the developers of such kind of software applications name them interactive
- compilers.
- .
- One of Cling’s main goals was to provide contemporary, high-performance
- alternative of the first C++ interpreter in the ROOT project - CINT. The
- backward-compatibility with CINT was major priority during the development.
- .
- This package contains the shared library.
-
-Package: libcling-dev
-Source: cling
-Version: 0.9.1-2
-Architecture: amd64
-Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Installed-Size: 7480
-Depends: libcling (= 0.9.1-2)
-Filename: ./libcling-dev_0.9.1-2_amd64.deb
-Size: 729152
-MD5sum: dfca8390adce384b369e6f6ed1743c60
-SHA1: cf687135136dbc77031f5c07ef756407760a59eb
-SHA256: 07ed8f5468b930399b830876a6ce6962d4761e8f54ea021d7e58954dc55ccc75
-Section: devel
-Priority: optional
-Homepage: https://root.cern/cling/
-Description: Interactive C++ interpreter
- Cling is an interactive C++ interpreter, built on the top of LLVM and Clang
- libraries. Its advantages over the standard interpreters are that it has
- command line prompt and uses just-in-time (JIT) compiler for compilation. Many
- of the developers of such kind of software applications name them interactive
- compilers.
- .
- One of Cling’s main goals was to provide contemporary, high-performance
- alternative of the first C++ interpreter in the ROOT project - CINT. The
- backward-compatibility with CINT was major priority during the development.
- .
- This package contains development files.
-
 Package: libfuzzer-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 792
 Depends: clang-9 (= 2:9.0.1-1)
-Filename: ./libfuzzer-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libfuzzer-9-dev_9.0.1-1_amd64.deb
 Size: 175476
 MD5sum: 87db9afc49328cd727f3f06c2eaa3393
 SHA1: fc57dbb362f4cb9dca320e4b8c7613f3fbd1785c
 SHA256: 81ca82100dda428fbbc9791f032a4a4febe181cab44d7736f403be552424c5a3
-Section: libdevel
-Priority: optional
+SHA512: 601a18eb4ddf8be278715ddd1c0e328ea918ecd9e6d544dd4b4375c9658f08648bf442a9c379a864f94151b03d83c5114ebfaa73b81882a78bc7ed448d7119f8
 Homepage: https://www.llvm.org/
 Description: Library for coverage-guided fuzz testing
  LibFuzzer is a library for in-process, coverage-guided, evolutionary fuzzing
@@ -572,42 +593,21 @@ Description: Library for coverage-guided fuzz testing
  coverage information for libFuzzer is provided by LLVM's SanitizerCoverage
  instrumentation.
 
-Package: liblld-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 12168
-Depends: libllvm9 (= 2:9.0.1-1)
-Filename: ./liblld-9_9.0.1-1_amd64.deb
-Size: 1345568
-MD5sum: ace6d57b6cdcf6c1a151dd56fc35e761
-SHA1: 615f48084f6826b624e00c35f0c1ccf10f108f20
-SHA256: aca9a49e5a720f0fc4afee2bfff0c02634a19db5afff4ad582b05bb44a0f229e
-Section: libs
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: LLVM-based linker, library
- LLD is a new, high-performance linker. It is built as a set of reusable
- components which highly leverage existing libraries in the larger LLVM
- Project.
- .
- This package contains the LLD runtime library.
-
 Package: liblld-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 198
 Depends: lld-9 (= 2:9.0.1-1), liblld-9 (= 2:9.0.1-1)
-Filename: ./liblld-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/liblld-9-dev_9.0.1-1_amd64.deb
 Size: 69636
 MD5sum: 0ae8a9ba99f142eb790833fe1bd20606
 SHA1: 561ce7fae99e8876623251ba217de33135dea553
 SHA256: 6c1baeaa181de1608e524d084ba297a275a806a27093853c9a640091a58ab84e
-Section: libdevel
-Priority: optional
+SHA512: 162bec430bca2f258bc905a40d8b2dcec4fbe4ef01153333e42d1ebf2d3e2909313aee6cf5d94fd2ef1da9690848880d9004a8f62a1032db48f3b9fcd99787e8
 Homepage: https://www.llvm.org/
 Description: LLVM-based linker, header files
  LLD is a new, high-performance linker. It is built as a set of reusable
@@ -616,42 +616,44 @@ Description: LLVM-based linker, header files
  .
  This package provides the header files to build extension over lld.
 
-Package: liblldb-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
+Package: liblld-9
 Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 38395
-Depends: libc6 (>= 2.33), libedit2 (>= 2.11-20080614-0), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libncurses6 (>= 6), libpython3.9 (>= 3.9.1), libstdc++6 (>= 9), libtinfo6 (>= 6)
-Filename: ./liblldb-9_9.0.1-1_amd64.deb
-Size: 9035296
-MD5sum: 96d7d7d046e3a87110740324f7d177c1
-SHA1: 431bcfb64e0ceecd4c58ed647a2c81572b49a28a
-SHA256: b9083c7547a513ac9c97fd9aeae9332ccb5185e591533661c7f6d66d7ac766c7
-Section: libs
+Version: 2:9.0.1-1
 Priority: optional
+Section: libs
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 12168
+Depends: libllvm9 (= 2:9.0.1-1)
+Filename: ./llvm-toolchain/liblld-9_9.0.1-1_amd64.deb
+Size: 1345568
+MD5sum: ace6d57b6cdcf6c1a151dd56fc35e761
+SHA1: 615f48084f6826b624e00c35f0c1ccf10f108f20
+SHA256: aca9a49e5a720f0fc4afee2bfff0c02634a19db5afff4ad582b05bb44a0f229e
+SHA512: 8e17ff7fd2039a80872612fc9f8806a8ecce328172e9ea313b47907524ee71e0cf2f5d035418e8c73f463420b332a69f319e4697c14cfecccb258aa0f6a8d9fd
 Homepage: https://www.llvm.org/
-Description: Next generation, high-performance debugger, library
- LLDB is a next generation, high-performance debugger. It is built as a set of
- reusable components which highly leverage existing libraries in the larger LLVM
- Project, such as the Clang expression parser and LLVM disassembler.
+Description: LLVM-based linker, library
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
  .
- This package contains the LLDB runtime library.
+ This package contains the LLD runtime library.
 
 Package: liblldb-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 3162
 Depends: lldb-9 (= 2:9.0.1-1)
-Filename: ./liblldb-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/liblldb-9-dev_9.0.1-1_amd64.deb
 Size: 494480
 MD5sum: abb8cce23a4450fb991f80144f6470a1
 SHA1: 2648b4a15f5ae3031be7958e10abacc093344c2f
 SHA256: 27507c0c647762f3db95324171464028cd6543f4f46e8e80afde43fed71aaf1c
-Section: libdevel
-Priority: optional
+SHA512: 7e02f2a951c02a362e4df9262873d3fc87bcd4d538474086925197740928b7c398430c67cb9296dbf0ec1248fcf63e69bb29c62062a71c86db59a55c746bedd0
 Homepage: https://www.llvm.org/
 Description: Next generation, high-performance debugger, header files
  LLDB is a next generation, high-performance debugger. It is built as a set of
@@ -660,24 +662,48 @@ Description: Next generation, high-performance debugger, header files
  .
  This package provides the header files to build extension over lldb.
 
-Package: libllvm-9-ocaml-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
+Package: liblldb-9
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 38395
+Depends: libc6 (>= 2.33), libedit2 (>= 2.11-20080614-0), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libncurses6 (>= 6), libpython3.9 (>= 3.9.1), libstdc++6 (>= 9), libtinfo6 (>= 6)
+Filename: ./llvm-toolchain/liblldb-9_9.0.1-1_amd64.deb
+Size: 9035296
+MD5sum: 96d7d7d046e3a87110740324f7d177c1
+SHA1: 431bcfb64e0ceecd4c58ed647a2c81572b49a28a
+SHA256: b9083c7547a513ac9c97fd9aeae9332ccb5185e591533661c7f6d66d7ac766c7
+SHA512: 039ced9b441b6f59a1eb55c97ba4d83bd29b7c5053e7aa0b62f9a9cf66759090ffebe6185e90bfb8ae2a695b793f47810e8ef6594271187ca608d574bb67946a
+Homepage: https://www.llvm.org/
+Description: Next generation, high-performance debugger, library
+ LLDB is a next generation, high-performance debugger. It is built as a set of
+ reusable components which highly leverage existing libraries in the larger LLVM
+ Project, such as the Clang expression parser and LLVM disassembler.
+ .
+ This package contains the LLDB runtime library.
+
+Package: libllvm-9-ocaml-dev
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: ocaml
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 2512
+Provides: libllvm-9-ocaml-dev-yi656, libllvm-x.y-ocaml-dev
 Depends: libctypes-ocaml-dev-7izk3, libintegers-ocaml-dev-t1ge5, ocaml-nox-4.11.1, llvm-9-dev (= 2:9.0.1-1)
 Suggests: llvm-9-doc
 Conflicts: libllvm-x.y-ocaml-dev
 Replaces: libllvm-x.y-ocaml-dev
-Provides: libllvm-9-ocaml-dev-yi656, libllvm-x.y-ocaml-dev
-Filename: ./libllvm-9-ocaml-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libllvm-9-ocaml-dev_9.0.1-1_amd64.deb
 Size: 224724
 MD5sum: c0bc749f6674640f69cf299d33de6240
 SHA1: edceb82d0d7398a2c683d69b91307d3372ec9c21
 SHA256: 28fa649fa9122af7ef74c4f53ed40eac016dc4d6e965fc5f8f22c570b8f0dece
-Section: ocaml
-Priority: optional
+SHA512: f2e05890d27710f8e93cc2170068a4760b6292d8b47d7b19135eb647a287c09c68b457c6d9d3c2dd90d03c7c4d934df3b69bdf3f183c59e0a29942118f5abb93
 Homepage: https://www.llvm.org/
 Description: Modular compiler and toolchain technologies, OCaml bindings
  LLVM is a collection of libraries and tools that make it easy to build
@@ -695,22 +721,23 @@ Description: Modular compiler and toolchain technologies, OCaml bindings
  This package provides the OCaml bindings to develop applications using llvm.
 
 Package: libllvm9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 67782
 Depends: libc6 (>= 2.33), libedit2 (>= 2.11-20080614-0), libffi8ubuntu1 (>= 3.4~20200819), libgcc-s1 (>= 3.3), libstdc++6 (>= 9), libtinfo6 (>= 6), zlib1g (>= 1:1.2.0)
 Breaks: libllvm3.9v4
 Replaces: libllvm3.9v4
-Filename: ./libllvm9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libllvm9_9.0.1-1_amd64.deb
 Size: 14853904
 MD5sum: 845ae45cecea82279041a5cff7bca864
 SHA1: d8593c9b63b1054bf9eb4e8a39cb29ba50ee3c13
 SHA256: db00e1c567217e4e5ad9e388c76689cbc8fbfdd90f3ba135e17ef9c6c912cddb
-Section: libs
-Priority: optional
-Multi-Arch: same
+SHA512: cb85ff6c9d8e658fee232957bad4a5eb6799ddf6e72ead8797fd6cf47854b0f6246993896a4e9e623a64109856d1cf6f29fd30a221fd472c7b35f84980cbe032
 Homepage: https://www.llvm.org/
 Description: Modular compiler and toolchain technologies, runtime library
  LLVM is a collection of libraries and tools that make it easy to build
@@ -720,24 +747,25 @@ Description: Modular compiler and toolchain technologies, runtime library
  This package contains the LLVM runtime library.
 
 Package: libomp-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 167
+Provides: libomp-x.y-dev
 Depends: libomp5-9 (= 2:9.0.1-1), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 4.6)
 Suggests: libomp-9-doc
 Conflicts: libomp-x.y-dev
 Breaks: libiomp-dev (<< 3.7-1), libomp-dev (<< 44)
 Replaces: libomp-x.y-dev
-Provides: libomp-x.y-dev
-Filename: ./libomp-9-dev_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libomp-9-dev_9.0.1-1_amd64.deb
 Size: 67668
 MD5sum: 23a51b8f49425198c541fa6143dd7bff
 SHA1: 09696ffd12a7b020a03c454053412e465e7443ff
 SHA256: 9bd451ecb79b73d58c2d59819e8816e04d3b62050881296e8d3ace237d4dd7fc
-Section: libdevel
-Priority: optional
+SHA512: 6fcc54f0a6165a8da97997e9bc3f82965a461b243b7de9390678ef5545208a64434e72220c706d2b6aa8411f2e9f27b8f87a002d7b8825fa19a7422f78a92f32
 Homepage: https://www.llvm.org/
 Description: LLVM OpenMP runtime - dev package
  The runtime is the part of the OpenMP implementation that your code is
@@ -745,21 +773,22 @@ Description: LLVM OpenMP runtime - dev package
  while it is executing.
 
 Package: libomp-9-doc
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: doc
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 12001
 Depends: libjs-jquery
 Breaks: libiomp-x.y-doc
 Replaces: libiomp-x.y-doc
-Filename: ./libomp-9-doc_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libomp-9-doc_9.0.1-1_amd64.deb
 Size: 870700
 MD5sum: d169ac92db84ef9826d8cdd75c8509dc
 SHA1: 66a47ba2512ebc0ba6c7f28ac060fd0791ad1956
 SHA256: c6550b8f0edb77392a2a73cc7ea676c35fceade328c2ccc466c0ba5bf71d92b9
-Section: doc
-Priority: optional
+SHA512: 987ecad086a3efedd6834c841e4b4ce87eb82217e7767e3dc6f307874d7e963edabe3a8a8faf366e722af6496ff9dbd1eaf1269a8beca2f427f3debd2e5c3f4b
 Homepage: https://www.llvm.org/
 Description: LLVM OpenMP runtime - Documentation
  The runtime is the part of the OpenMP implementation that your code is
@@ -769,66 +798,46 @@ Description: LLVM OpenMP runtime - Documentation
  This package contains the documentation of this package.
 
 Package: libomp5-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 1953
+Provides: libomp-x.y
 Depends: libc6 (>= 2.32)
 Conflicts: libomp-x.y
 Breaks: libomp5 (<< 44)
 Replaces: libomp-x.y
-Provides: libomp-x.y
-Filename: ./libomp5-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/libomp5-9_9.0.1-1_amd64.deb
 Size: 334048
 MD5sum: c8f9dfb1d23b0a7247616aab8c7a9047
 SHA1: 0d71ac365c0b7772842d564faddec5f0f99bc8f2
 SHA256: 219997b7334c4c02591ad6ec06bb7ef03154bcb9bfcea4c588c87b01a02d397f
-Section: devel
-Priority: optional
-Multi-Arch: same
+SHA512: 9fd495792fd99fafd8e3fc11357fe6f0e5daa3630c7ee6a8c1290c0c9ae6011ac336935d0997fe59c138bc7361ea555d97e0fda3b7fa733a919507e3c8e6365d
 Homepage: https://www.llvm.org/
 Description: LLVM OpenMP runtime
  The runtime is the part of the OpenMP implementation that your code is
  linked against, and that manages the multiple threads in an OpenMP program
  while it is executing.
 
-Package: libxeus1
-Source: xeus
-Version: 1.0.4-1
-Architecture: amd64
-Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
-Installed-Size: 1017
-Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 6), libuuid1 (>= 2.16), libzmq5 (>= 3.2.3+dfsg)
-Filename: ./libxeus1_1.0.4-1_amd64.deb
-Size: 276180
-MD5sum: 1efc9c4d2228d574a84261fb86aa94bf
-SHA1: f3178152a33125d9a7f9a00492a10a0f67e6efff
-SHA256: 466e3e24fba8d5dbcad15702799fdcef0ae0bef1aee923d1da04ff43d3ca7848
-Section: libs
-Priority: optional
-Homepage: https://github.com/jupyter-xeus/xeus
-Description: C++ Implementation of the Jupyter Kernel protocol (library)
- xeus enables custom kernel authors to implement Jupyter kernels more
- easily. It takes the burden of implementing the Jupyter Kernel protocol
- so developers can focus on implementing the interpreter part of the Kernel.
- .
- This package contains the shared library.
-
 Package: lld-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 3679
 Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 6)
-Filename: ./lld-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/lld-9_9.0.1-1_amd64.deb
 Size: 942296
 MD5sum: 18a7796947b339259d1652660214f107
 SHA1: 5d42cad244d0b696f9659f64ba0f731351f9f5de
 SHA256: fdf3b4252ca216e182eccce1b4bb6913cf40184e338153e13b8a007926141146
-Section: devel
-Priority: optional
+SHA512: 6452ccc567337a9ebc45c9f47fca6e39cbd8685562555ca63c1fcfea6074c7efc70a66ea20a76433c9331adb8d0dd70f8064718db4381e00a5d0ae9955bbce16
 Homepage: https://www.llvm.org/
 Description: LLVM-based linker
  LLD is a new, high-performance linker. It is built as a set of reusable
@@ -836,41 +845,201 @@ Description: LLVM-based linker
  Project.
 
 Package: lldb-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 28007
 Depends: libc6 (>= 2.33), libedit2 (>= 2.11-20080614-0), libgcc-s1 (>= 3.0), liblldb-9 (>= 2:9~svn298832-1~), libllvm9 (= 2:9.0.1-1), libncurses6 (>= 6), libstdc++6 (>= 9), libtinfo6 (>= 6), llvm-9-dev, python3-lldb-9
-Filename: ./lldb-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/lldb-9_9.0.1-1_amd64.deb
 Size: 7217432
 MD5sum: 71c3341083293e4d049dd585bd0a8d3c
 SHA1: cf5aaaadfa40bc921e7bda78a276327df102da6e
 SHA256: a1450aac093e9e958b9c9bd4cbd539b6e8eed87b1ceeac7efc740b2e5a09e763
-Section: devel
-Priority: optional
+SHA512: 5ea9a2c4be294ec8cf10ec4ca2164fc8ed2c0d7a9fa31c12640fc9479a0796b73b3283a016176290a9ca7cee630f569803ad5bce15affb5c70741055cd7ba6d5
 Homepage: https://www.llvm.org/
 Description: Next generation, high-performance debugger
  LLDB is a next generation, high-performance debugger. It is built as a set of
  reusable components which highly leverage existing libraries in the larger LLVM
  Project, such as the Clang expression parser and LLVM disassembler.
 
-Package: llvm-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
+Package: llvm-9-dev
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 180341
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 9), libffi-dev (>= 3.0.9), llvm-9 (= 2:9.0.1-1), libtinfo-dev, llvm-9-tools (= 2:9.0.1-1), libclang-cpp9 (= 2:9.0.1-1), libz3-dev
+Filename: ./llvm-toolchain/llvm-9-dev_9.0.1-1_amd64.deb
+Size: 24313100
+MD5sum: 757445c320f2b3d3a2271d0405635908
+SHA1: 3bd8760e39bc55395e86792d339ae3d64db9d9c3
+SHA256: 0ef3dd5845d4ea31c02b0bb41873dbebfcb24530a7e2d886e8e57be5df0c8623
+SHA512: 371df59425a6786d5ff37fabd9729445a2d05d55a19ea9d586f07d0001473cfa5a1fda79439574e5da82c6bca3c56201d5cabc9b846f0ea319bf1e95f21ed6c0
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, libraries and headers
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides the libraries and headers to develop applications
+ using llvm.
+
+Package: llvm-9-doc
+Architecture: all
+Version: 2:9.0.1-1
+Priority: optional
+Section: doc
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 26959
+Depends: libjs-jquery, libjs-underscore
+Filename: ./llvm-toolchain/llvm-9-doc_9.0.1-1_all.deb
+Size: 2704724
+MD5sum: 255b86cfaad2e02310f5234e56bc37ad
+SHA1: c72fab94e9e370344f3418fe0f22bdbf4ddb9f2d
+SHA256: ece4dbb790a3cbdaa9942cb2a9a4ec006785dee1b90ecef6545022831e5daf9e
+SHA512: 1c172c470a087ceb47be653a51ac0ec25b8001dc7fe94855a359322e705daae07e47bc23c5dbb3b7a48c46f1e17f36bcca90883514bc86e6f2e73c063fcb79c4
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, documentation
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package contains all documentation (extensive).
+
+Package: llvm-9-examples
+Architecture: all
+Version: 2:9.0.1-1
+Priority: optional
+Section: doc
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 51
+Depends: llvm-9-dev (>= 2:9.0.1-1), llvm-9-dev (<< 2:9.0.1-1+c~)
+Filename: ./llvm-toolchain/llvm-9-examples_9.0.1-1_all.deb
+Size: 39360
+MD5sum: e111ad079115f1a66a7694ef3e5a4ba1
+SHA1: ecb8238db8df3bb7e9d09a6bec55ec9b5f206d1b
+SHA256: 4d242888a1c94b978cd0e9d63156120d4c06eb13a71a7580457aa0dd1805106a
+SHA512: ce6d3d119c534ddba671e397b7be2d10df2c93862f12c66a479e79951fb3b0b007b9906900a8a0ad454a31bcef8b663552e713e9acd858fc810a3da5d7274dff
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, examples
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package contains examples for using LLVM, both in developing
+ extensions to LLVM and in using it to compile code.
+
+Package: llvm-9-runtime
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 685
+Depends: binfmt-support, libc6 (>= 2.33), libgcc-s1 (>= 3.3), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 6), libtinfo6 (>= 6), zlib1g (>= 1:1.2.0)
+Filename: ./llvm-toolchain/llvm-9-runtime_9.0.1-1_amd64.deb
+Size: 213032
+MD5sum: 068522d565157137f11ecd563e692fbe
+SHA1: f6d328d311f829e14eb8d5f554a96136d28af9b2
+SHA256: 32ea11e5d51907fc011bb0ff900f5e7474d987af2c79d3768728e1842c70948f
+SHA512: 7d31b97fbd350dbd454d00cc7fedc5bdf262cca658f987d5972c73bc802db0be8b32305989d4d0c00c04b7eb28c11e21afd22f59e7edcde9f22b770dd46ab821
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, IR interpreter
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides the minimal required to execute programs in LLVM
+ format.
+
+Package: llvm-9-tools
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 1381
+Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.3), libstdc++6 (>= 5.2), libtinfo6 (>= 6), zlib1g (>= 1:1.1.4), python3, python3-pygments, python3-yaml
+Filename: ./llvm-toolchain/llvm-9-tools_9.0.1-1_amd64.deb
+Size: 329804
+MD5sum: 1339ca0e0774be7793ae5af5cc558664
+SHA1: c29545dc9796edb2b60bd4f817b8343bbd70723c
+SHA256: f40b11930a488441f460bc5bbbbe0e522f7f282123bd8dcd8fab0f6c16a19936
+SHA512: c0de7ae8c6a961444c85a59c73a6218c4583cefbdee0bf07421231ca9e736cad44b3d240ba1b71866dec3d944ed41483c87f8efc77faf1c647fe2e1634faf739
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, tools
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides tools for testing.
+
+Package: llvm-9
+Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: devel
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 17698
 Depends: llvm-9-runtime (= 2:9.0.1-1), libc6 (>= 2.33), libgcc-s1 (>= 3.3), libllvm9 (>= 2:9~svn298832-1~), libpfm4, libstdc++6 (>= 9), libtinfo6 (>= 6), zlib1g (>= 1:1.1.4)
 Recommends: llvm-9-dev
 Suggests: llvm-9-doc
-Filename: ./llvm-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/llvm-9_9.0.1-1_amd64.deb
 Size: 4850476
 MD5sum: fed3e4c3a40d668b1f384d8e19dc160e
 SHA1: 1e703dcad4a2f4cf2301c64cc1da350692ab91a9
 SHA256: 770272882814d5f63607eeab8da8067b258a890b40f0d2ff6b6ceb2e3eb187fc
-Section: devel
-Priority: optional
+SHA512: 379e9ef8a8af9862c931586ff7ecae4d5d0adec004efe0c90876c9ce26a95717e45c4e181c60468a8e72affb905a2a385a2293739b7cd9413763da894dbe1ebf
 Homepage: https://www.llvm.org/
 Description: Modular compiler and toolchain technologies
  LLVM is a collection of libraries and tools that make it easy to build
@@ -895,195 +1064,44 @@ Description: Modular compiler and toolchain technologies
  a young scheme front-end, and Java support is in development. LLVM can
  generate code for X96, SparcV9, PowerPC or many other architectures.
 
-Package: llvm-9-dev
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 180341
-Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libllvm9 (= 2:9.0.1-1), libstdc++6 (>= 9), libffi-dev (>= 3.0.9), llvm-9 (= 2:9.0.1-1), libtinfo-dev, llvm-9-tools (= 2:9.0.1-1), libclang-cpp9 (= 2:9.0.1-1), libz3-dev
-Filename: ./llvm-9-dev_9.0.1-1_amd64.deb
-Size: 24313100
-MD5sum: 757445c320f2b3d3a2271d0405635908
-SHA1: 3bd8760e39bc55395e86792d339ae3d64db9d9c3
-SHA256: 0ef3dd5845d4ea31c02b0bb41873dbebfcb24530a7e2d886e8e57be5df0c8623
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Modular compiler and toolchain technologies, libraries and headers
- LLVM is a collection of libraries and tools that make it easy to build
- compilers, optimizers, just-in-time code generators, and many other
- compiler-related programs.
- .
- LLVM uses a single, language-independent virtual instruction set both
- as an offline code representation (to communicate code between
- compiler phases and to run-time systems) and as the compiler internal
- representation (to analyze and transform programs). This persistent
- code representation allows a common set of sophisticated compiler
- techniques to be applied at compile-time, link-time, install-time,
- run-time, or "idle-time" (between program runs).
- .
- This package provides the libraries and headers to develop applications
- using llvm.
-
-Package: llvm-9-doc
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: all
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 26959
-Depends: libjs-jquery, libjs-underscore
-Filename: ./llvm-9-doc_9.0.1-1_all.deb
-Size: 2704724
-MD5sum: 255b86cfaad2e02310f5234e56bc37ad
-SHA1: c72fab94e9e370344f3418fe0f22bdbf4ddb9f2d
-SHA256: ece4dbb790a3cbdaa9942cb2a9a4ec006785dee1b90ecef6545022831e5daf9e
-Section: doc
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Modular compiler and toolchain technologies, documentation
- LLVM is a collection of libraries and tools that make it easy to build
- compilers, optimizers, just-in-time code generators, and many other
- compiler-related programs.
- .
- LLVM uses a single, language-independent virtual instruction set both
- as an offline code representation (to communicate code between
- compiler phases and to run-time systems) and as the compiler internal
- representation (to analyze and transform programs). This persistent
- code representation allows a common set of sophisticated compiler
- techniques to be applied at compile-time, link-time, install-time,
- run-time, or "idle-time" (between program runs).
- .
- This package contains all documentation (extensive).
-
-Package: llvm-9-examples
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: all
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 51
-Depends: llvm-9-dev (>= 2:9.0.1-1), llvm-9-dev (<< 2:9.0.1-1+c~)
-Filename: ./llvm-9-examples_9.0.1-1_all.deb
-Size: 39360
-MD5sum: e111ad079115f1a66a7694ef3e5a4ba1
-SHA1: ecb8238db8df3bb7e9d09a6bec55ec9b5f206d1b
-SHA256: 4d242888a1c94b978cd0e9d63156120d4c06eb13a71a7580457aa0dd1805106a
-Section: doc
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Modular compiler and toolchain technologies, examples
- LLVM is a collection of libraries and tools that make it easy to build
- compilers, optimizers, just-in-time code generators, and many other
- compiler-related programs.
- .
- LLVM uses a single, language-independent virtual instruction set both
- as an offline code representation (to communicate code between
- compiler phases and to run-time systems) and as the compiler internal
- representation (to analyze and transform programs). This persistent
- code representation allows a common set of sophisticated compiler
- techniques to be applied at compile-time, link-time, install-time,
- run-time, or "idle-time" (between program runs).
- .
- This package contains examples for using LLVM, both in developing
- extensions to LLVM and in using it to compile code.
-
-Package: llvm-9-runtime
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 685
-Depends: binfmt-support, libc6 (>= 2.33), libgcc-s1 (>= 3.3), libllvm9 (>= 2:9~svn298832-1~), libstdc++6 (>= 6), libtinfo6 (>= 6), zlib1g (>= 1:1.2.0)
-Filename: ./llvm-9-runtime_9.0.1-1_amd64.deb
-Size: 213032
-MD5sum: 068522d565157137f11ecd563e692fbe
-SHA1: f6d328d311f829e14eb8d5f554a96136d28af9b2
-SHA256: 32ea11e5d51907fc011bb0ff900f5e7474d987af2c79d3768728e1842c70948f
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Modular compiler and toolchain technologies, IR interpreter
- LLVM is a collection of libraries and tools that make it easy to build
- compilers, optimizers, just-in-time code generators, and many other
- compiler-related programs.
- .
- LLVM uses a single, language-independent virtual instruction set both
- as an offline code representation (to communicate code between
- compiler phases and to run-time systems) and as the compiler internal
- representation (to analyze and transform programs). This persistent
- code representation allows a common set of sophisticated compiler
- techniques to be applied at compile-time, link-time, install-time,
- run-time, or "idle-time" (between program runs).
- .
- This package provides the minimal required to execute programs in LLVM
- format.
-
-Package: llvm-9-tools
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
-Architecture: amd64
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 1381
-Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.3), libstdc++6 (>= 5.2), libtinfo6 (>= 6), zlib1g (>= 1:1.1.4), python3, python3-pygments, python3-yaml
-Filename: ./llvm-9-tools_9.0.1-1_amd64.deb
-Size: 329804
-MD5sum: 1339ca0e0774be7793ae5af5cc558664
-SHA1: c29545dc9796edb2b60bd4f817b8343bbd70723c
-SHA256: f40b11930a488441f460bc5bbbbe0e522f7f282123bd8dcd8fab0f6c16a19936
-Section: devel
-Priority: optional
-Homepage: https://www.llvm.org/
-Description: Modular compiler and toolchain technologies, tools
- LLVM is a collection of libraries and tools that make it easy to build
- compilers, optimizers, just-in-time code generators, and many other
- compiler-related programs.
- .
- LLVM uses a single, language-independent virtual instruction set both
- as an offline code representation (to communicate code between
- compiler phases and to run-time systems) and as the compiler internal
- representation (to analyze and transform programs). This persistent
- code representation allows a common set of sophisticated compiler
- techniques to be applied at compile-time, link-time, install-time,
- run-time, or "idle-time" (between program runs).
- .
- This package provides tools for testing.
-
 Package: python-clang-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: oldlibs
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 48
 Depends: python3-clang-9
-Filename: ./python-clang-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/python-clang-9_9.0.1-1_amd64.deb
 Size: 38908
 MD5sum: b8b88b11bca5ffc8cb64a1649a11ca73
 SHA1: 2000a67e74755c768e5c74e310c66c0494b60161
 SHA256: 6d71e1060384d42404a80caf67c85705ee705532fe8523400cc1ade5713eb964
-Section: oldlibs
-Priority: optional
+SHA512: 82184ad3517c38886b0bfee658864f56d3312a2a3de4309363cd78a75440a72f301510dc34c2a79a05ebb0cac425ef987425cbff1db7b7cd6a2c91bc9cc759a9
 Homepage: https://www.llvm.org/
 Description: transitional package to python3-clang-9
  This is a transitional package. It can safely be removed.
 
 Package: python3-clang-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: python
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 179
+Provides: python-clang-x.y
 Depends: python3, libclang-9-dev
 Conflicts: python-clang-x.y
 Breaks: python-clang-9 (<< 2:9.0.1-3)
 Replaces: python-clang-9 (<< 2:9.0.1-3), python-clang-x.y
-Provides: python-clang-x.y
-Filename: ./python3-clang-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/python3-clang-9_9.0.1-1_amd64.deb
 Size: 64292
 MD5sum: 062bab940a7c827326122107a025aac0
 SHA1: 2d8107cfbcebc83bdd2c47670d6ec46c9a9021b2
 SHA256: fd05b939ecce78d31c4c38ee718ff26aa12827e62279a6e9041183f98d86e299
-Section: python
-Priority: optional
+SHA512: d4858e2cba0265ba2cd3c5a512972dca1ef4c763ce45a0bf41db59ff08cee30aaa1aa5c107ba4a073b1c5073922d43aeb3ba1d054264335368653d1b7c6eec1c
 Homepage: https://www.llvm.org/
 Description: Clang Python Bindings
  Clang project is a C, C++, Objective C and Objective C++ front-end
@@ -1096,22 +1114,23 @@ Description: Clang Python Bindings
  This binding package provides access to the Clang compiler and libraries.
 
 Package: python3-lldb-9
-Source: llvm-toolchain-9
-Version: 2:9.0.1-1
 Architecture: amd64
+Version: 2:9.0.1-1
+Priority: optional
+Section: python
+Source: llvm-toolchain-9
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
 Installed-Size: 727
+Provides: python3-lldb-x.y
 Depends: liblldb-9 (= 2:9.0.1-1), python3-six
 Conflicts: python3-lldb-x.y
 Replaces: python3-lldb-x.y
-Provides: python3-lldb-x.y
-Filename: ./python3-lldb-9_9.0.1-1_amd64.deb
+Filename: ./llvm-toolchain/python3-lldb-9_9.0.1-1_amd64.deb
 Size: 127624
 MD5sum: c96120688622b96b3c5234c7b210009f
 SHA1: 239c0d60d5fdd1436a14271ab0b03430ec85b911
 SHA256: d965c093ab99839d22df2d9e424afa739d36f1a573e3f0e7339c020339657ac1
-Section: python
-Priority: optional
+SHA512: 86c050af73b4011a07f0ec147c24c4b05f05ed95bcf36d4bd5059e14afebc8ba31899129ac4c233b5b292bf35f21bdca8a0f0e922f0e189c444cb24d91b7237f
 Homepage: https://www.llvm.org/
 Description: Next generation, high-performance debugger, python3 lib
  LLDB is a next generation, high-performance debugger. It is built as a set of
@@ -1120,38 +1139,44 @@ Description: Next generation, high-performance debugger, python3 lib
  .
  This binding package provides access to lldb.
 
-Package: xeus-cling
-Version: 0.12.1-1
+Package: libxeus1
 Architecture: amd64
-Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Installed-Size: 4813
-Depends: cling-common (>= 0.6), libclang-cpp9 (>> 2:9~), libllvm9 (>= 2:9~svn298832-1~), nlohmann-json3-dev, libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 9), libxeus1 (>= 1.0.4)
-Filename: ./xeus-cling_0.12.1-1_amd64.deb
-Size: 804296
-MD5sum: 8e80959af083d0f162ae31ff8aee92d8
-SHA1: 36aa186475962697ad7c78c4551d53aef307415a
-SHA256: e7054e77e04b4a59905f83f3d785c67287cb2b13f491186917185793be44cde8
-Section: devel
+Version: 1.0.4-1
 Priority: optional
-Homepage: https://github.com/jupyter-xeus/xeus-cling
-Description: Jupyter kernel for the C++
- xeus-cling is a Jupyter kernel for C++ based on the C++ interpreter cling and
- the native implementation of the Jupyter protocol xeus.
+Section: libs
+Source: xeus
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 1017
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 6), libuuid1 (>= 2.16), libzmq5 (>= 3.2.3+dfsg)
+Filename: ./misc/libxeus1_1.0.4-1_amd64.deb
+Size: 276180
+MD5sum: 1efc9c4d2228d574a84261fb86aa94bf
+SHA1: f3178152a33125d9a7f9a00492a10a0f67e6efff
+SHA256: 466e3e24fba8d5dbcad15702799fdcef0ae0bef1aee923d1da04ff43d3ca7848
+SHA512: 2a9e51ad6a15037a0368c02b3e0e96292e4cd0bf3a0046ad7c24847f25e308231a548603585017e8ab33c8cb7112206d78c9e40f4d5317900b26789704b369ef
+Homepage: https://github.com/jupyter-xeus/xeus
+Description: C++ Implementation of the Jupyter Kernel protocol (library)
+ xeus enables custom kernel authors to implement Jupyter kernels more
+ easily. It takes the burden of implementing the Jupyter Kernel protocol
+ so developers can focus on implementing the interpreter part of the Kernel.
+ .
+ This package contains the shared library.
 
 Package: xeus-dev
-Source: xeus
-Version: 1.0.4-1
 Architecture: amd64
+Version: 1.0.4-1
+Priority: optional
+Section: libdevel
+Source: xeus
 Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
 Installed-Size: 3642
 Depends: libxeus1 (= 1.0.4-1), xtl-dev, libzmq3-dev, nlohmann-json3-dev, uuid-dev, libssl-dev
-Filename: ./xeus-dev_1.0.4-1_amd64.deb
+Filename: ./misc/xeus-dev_1.0.4-1_amd64.deb
 Size: 403716
 MD5sum: a84a7218d25f85add7e8b794aea97d23
 SHA1: 29dc6f383c097461d7cb56cf64fe2af015df1b4d
 SHA256: 491f14917c6b578c57fb1f5174a72d6f3c69d8542b37cd01780b2353c6374758
-Section: libdevel
-Priority: optional
+SHA512: 6948ee416328612b3498bbbdc8691b188c884b7b3cddc9ba92b28adb05b437cb270d6b7fa21c097d0159b2ec613d734186b70d2d0ac25dfb20bf18fc65b56122
 Homepage: https://github.com/jupyter-xeus/xeus
 Description: C++ Implementation of the Jupyter Kernel protocol (headers)
  xeus enables custom kernel authors to implement Jupyter kernels more
@@ -1161,20 +1186,40 @@ Description: C++ Implementation of the Jupyter Kernel protocol (headers)
  This package contains the headers and cmake config.
 
 Package: xtl-dev
-Source: xtl
-Version: 0.7.2-2
 Architecture: all
+Version: 0.7.2-2
+Priority: optional
+Section: libdevel
+Source: xtl
 Maintainer: Debian QuantStack Team <team+debian-quantstack-team@tracker.debian.org>
 Installed-Size: 799
-Filename: ./xtl-dev_0.7.2-2_all.deb
+Filename: ./misc/xtl-dev_0.7.2-2_all.deb
 Size: 89348
 MD5sum: 4d2f190e7a19687912dde7ce4614f817
 SHA1: 902339984c12f021a8ea5a8b79610d7bd3577ec1
 SHA256: 50a60e09974e6874fffde02a8d8836de421443bdbd16369741207b9c8d34edda
-Section: libdevel
-Priority: optional
+SHA512: 9374a7caf23f865f7cff88083a992c1712ed7700e2c04d00c538fa4940cb958b4a506d65e180d564f98146959962a0ce210c9365480e8dbf585948e937a2b3c7
 Homepage: https://github.com/xtensor-stack/xtl
 Description: basic tools (containers, algorithms) used for xtensor and xeus
  This package contains additional containers and tools missing from
  STL C++14. This library is header-only.
+
+Package: xeus-cling
+Architecture: amd64
+Version: 0.12.1-1
+Priority: optional
+Section: devel
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 4813
+Depends: cling-common (>= 0.6), libclang-cpp9 (>> 2:9~), libllvm9 (>= 2:9~svn298832-1~), nlohmann-json3-dev, libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 9), libxeus1 (>= 1.0.4)
+Filename: ./xeus-cling/xeus-cling_0.12.1-1_amd64.deb
+Size: 804296
+MD5sum: 8e80959af083d0f162ae31ff8aee92d8
+SHA1: 36aa186475962697ad7c78c4551d53aef307415a
+SHA256: e7054e77e04b4a59905f83f3d785c67287cb2b13f491186917185793be44cde8
+SHA512: 6e9be98e4eaaa00c65bfe134102c4ed78055887e90e9d1e09668ce694d5b0ebda79b4ddc4585ae56b54ea6a63fc145b7095a5be5e7cc70845311698dc302e790
+Homepage: https://github.com/jupyter-xeus/xeus-cling
+Description: Jupyter kernel for the C++
+ xeus-cling is a Jupyter kernel for C++ based on the C++ interpreter cling and
+ the native implementation of the Jupyter protocol xeus.
 

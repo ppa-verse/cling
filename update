@@ -3,7 +3,7 @@ set -e
 
 KEY=80B93EA53DC484D1D86E672B40972A700CD3618F
 
-dpkg-scanpackages --multiversion . > Packages
+apt-ftparchive packages . > Packages
 gzip -k -f Packages
 
 apt-ftparchive release . > Release
