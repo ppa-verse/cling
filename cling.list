@@ -1,1 +1,1 @@
-deb https://ppa-verse.github.io/cling ./
+deb [signed-by=/usr/share/keyrings/cling-keyring.gpg] https://ppa-verse.github.io/cling ./
