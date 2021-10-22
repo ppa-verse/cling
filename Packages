@@ -1120,6 +1120,24 @@ Description: Next generation, high-performance debugger, python3 lib
  .
  This binding package provides access to lldb.
 
+Package: xeus-cling
+Version: 0.12.1-1
+Architecture: amd64
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Installed-Size: 4813
+Depends: cling-common (>= 0.6), libclang-cpp9 (>> 2:9~), libllvm9 (>= 2:9~svn298832-1~), nlohmann-json3-dev, libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 9), libxeus1 (>= 1.0.4)
+Filename: ./xeus-cling_0.12.1-1_amd64.deb
+Size: 804296
+MD5sum: 8e80959af083d0f162ae31ff8aee92d8
+SHA1: 36aa186475962697ad7c78c4551d53aef307415a
+SHA256: e7054e77e04b4a59905f83f3d785c67287cb2b13f491186917185793be44cde8
+Section: devel
+Priority: optional
+Homepage: https://github.com/jupyter-xeus/xeus-cling
+Description: Jupyter kernel for the C++
+ xeus-cling is a Jupyter kernel for C++ based on the C++ interpreter cling and
+ the native implementation of the Jupyter protocol xeus.
+
 Package: xeus-dev
 Source: xeus
 Version: 1.0.4-1
